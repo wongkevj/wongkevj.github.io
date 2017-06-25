@@ -1,10 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" type="text/css" href="./teststyle.css">
-<title>Test</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kevin Wong</title>
+
+    <!-- Bootstrap Core CSS 
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- Custom CSS-->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
 </head>
-<body>
-	<h4><a href="./next_page.html">Next Page</a></h4>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header" id="header-div">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Kevin Wong</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+                <hr>
+                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+            </div>
+        </div>
+    </header>
+    -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">About Me</h2>
+		</div>
+		<div class="row">
+		    <div class="col-lg-6">
+		        <img src="img/duck.jpg" class="img-responsive">
+			<figcaption>In absence of a decent picture of me, have a duck.</figcaption>
+		    </div>
+		    <div class="col-lg-6">
+                        <p class="lead">Welcome to my website! If you can't tell from the title of the website, my name is Kevin Wong, and I'm a student currently working towards
+			a B.S. in Computer Science at the University of California, San Diego.</br>I have a great love for logic and a <span class="text-red">burning</span> curiosity that constantly drives me
+					to figure out how things work, whether it's a program, a machine, or even a mechanical pencil.<br>I also hold a fondness for puzzles, gaming, and a good sense of humor.</p>
+		    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+		    <div class="col-lg-8 col-lg-offset-2 text-center">
+			    <h2 class="section-heading">Projects</h2>
+		    </div>
+		    <div class="row">
+			    <div class="col-lg-6 text-center">
+			        <h3>Shallus-Bot</h3>
+			        <a href="https://github.com/cgropp/Shallus-Bot" target="_blank">
+			        <img class="img-circle" src="https://images-ext-1.discordapp.net/external/DS6qLfNuIy7wy8IkUrGPquxbAzR9SWDbkif80oaSg-E/https/discordapp.com/api/guilds/279887975200849920/icons/64e116e27f9b2a4c5a1f6c69720d003c.jpg?width=80&height=80">
+			        </a>
+				<p class="lead">A bot for the messaging application Discord, which is built off of the "Red Discord-Bot" by TwentySix on GitHub.<br>
+			                     	I implemented a system similar to a trading card system in which users can 
+			                        draw, collect, and trade images pulled from a database using its REST API. These images are stored in lists which are assigned to each user, and
+						are stored in JSON <span class="text-blue">files</span> to disk in order to allow them to persist.</p>
+			    </div>
+                            <div class="col-lg-6 text-center">
+			        <h3>NyaBot</h3>
+			        <a href="https://github.com/randomdentyne/NyaBot" target="_blank">
+				<img src="img/soundboard.jpg" class="img-circle" height="80" width="80">
+			        </a>
+				<p class="lead">Another bot for Discord. This bot is my own bot, and is primarily a soundboard, playing <span class="text-green">sound</span> files on command through the application into a voice channel. <br>
+				                It makes extensive use of the Discord api as well as uses mechanisms such as a pseudo-implementation of semaphores in order to make the asynchronous nature of its
+						commands more scalable.
+		    	        </p>
+			    </div>
+		    </div>
+	    </div>
+        </div>
+    </section>
+    <hr>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <p>For any job inquiries, feel free to send me an email at the address below!</p>
+                </div>
+	    </div>
+	        <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                        <p><a href="mailto:wongkevj@gmail.com">wongkevj@gmail.com</a></p>
+                    </div>
+                </div>
+	    </div>
+        </div>
+    </section>
+    <aside class="bg-dark collapse in">
+        <div class="container text-center" id="test">
+            <div class="call-to-action">
+		    <form class="form-inline">
+		        <input type="text" name="pass_text" class="form-control" id="pass_text">
+                        <button class="btn btn-default btn-small" onclick="checkInput()">Enter</button>
+		    </form>
+	            <p id="hint" class="text-dark">the password is color-coded</p>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    <!-- javascript for something -->
+    <script src="js/slideup.js"></script>
+
 </body>
+
 </html>
