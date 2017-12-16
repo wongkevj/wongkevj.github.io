@@ -8144,26 +8144,15 @@ var _user$project$App$view = function (model) {
 										_elm_lang$html$Html$button,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player1Loss),
+											_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player2Loss),
 											_1: {ctor: '[]'}
 										},
-										{ctor: '[]'}),
-									_1: {
-										ctor: '::',
-										_0: A2(
-											_elm_lang$html$Html$button,
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player2Loss),
-												_1: {ctor: '[]'}
-											},
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html$text(_p7._0),
-												_1: {ctor: '[]'}
-											}),
-										_1: {ctor: '[]'}
-									}
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text(_p7._0),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
 						}
@@ -8171,7 +8160,7 @@ var _user$project$App$view = function (model) {
 				});
 		}
 	} else {
-		var _p9 = _p6._0;
+		var _p10 = _p6._0;
 		var _p8 = model.player2;
 		if (_p8.ctor === 'Nothing') {
 			return A2(
@@ -8217,28 +8206,18 @@ var _user$project$App$view = function (model) {
 										},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text(_p9),
+											_0: _elm_lang$html$Html$text(_p10),
 											_1: {ctor: '[]'}
 										}),
-									_1: {
-										ctor: '::',
-										_0: A2(
-											_elm_lang$html$Html$button,
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player2Loss),
-												_1: {ctor: '[]'}
-											},
-											{ctor: '[]'}),
-										_1: {ctor: '[]'}
-									}
+									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
 						}
 					}
 				});
 		} else {
-			return A2(
+			var _p9 = _p8._0;
+			return _elm_lang$core$List$isEmpty(model.queue) ? A2(
 				_elm_lang$html$Html$div,
 				{ctor: '[]'},
 				{
@@ -8281,7 +8260,7 @@ var _user$project$App$view = function (model) {
 										},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text(_p9),
+											_0: _elm_lang$html$Html$text(_p10),
 											_1: {ctor: '[]'}
 										}),
 									_1: {
@@ -8295,7 +8274,73 @@ var _user$project$App$view = function (model) {
 											},
 											{
 												ctor: '::',
-												_0: _elm_lang$html$Html$text(_p8._0),
+												_0: _elm_lang$html$Html$text(_p9),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}),
+							_1: {ctor: '[]'}
+						}
+					}
+				}) : A2(
+				_elm_lang$html$Html$div,
+				{ctor: '[]'},
+				{
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$input,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Events$onInput(_user$project$App$Change),
+							_1: {ctor: '[]'}
+						},
+						{ctor: '[]'}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$button,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Add),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('Add Player'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$div,
+								{ctor: '[]'},
+								{
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$button,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player1Loss),
+											_1: {ctor: '[]'}
+										},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text(_p10),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$button,
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player2Loss),
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text(_p9),
 												_1: {ctor: '[]'}
 											}),
 										_1: {ctor: '[]'}
@@ -8308,8 +8353,19 @@ var _user$project$App$view = function (model) {
 									{ctor: '[]'},
 									{
 										ctor: '::',
-										_0: _user$project$App$renderList(model.queue),
-										_1: {ctor: '[]'}
+										_0: _elm_lang$html$Html$text('Click the loser to send them back into the queue!'),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$div,
+												{ctor: '[]'},
+												{
+													ctor: '::',
+													_0: _user$project$App$renderList(model.queue),
+													_1: {ctor: '[]'}
+												}),
+											_1: {ctor: '[]'}
+										}
 									}),
 								_1: {ctor: '[]'}
 							}
