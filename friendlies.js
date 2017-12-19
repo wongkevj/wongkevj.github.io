@@ -8498,24 +8498,105 @@ var _user$project$App$view = function (model) {
 				}),
 			_1: {
 				ctor: '::',
-				_0: _user$project$App$aboutString,
+				_0: A2(
+					_elm_lang$html$Html$input,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Events$onInput(_user$project$App$Change),
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$value(model.name),
+							_1: {ctor: '[]'}
+						}
+					},
+					{ctor: '[]'}),
 				_1: {
 					ctor: '::',
-					_0: _user$project$App$usageString,
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$button,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Add),
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('addbutton'),
+										_1: {ctor: '[]'}
+									}
+								},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Add Player'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}),
 					_1: {
 						ctor: '::',
 						_0: A2(
-							_elm_lang$html$Html$input,
+							_elm_lang$html$Html$div,
+							{ctor: '[]'},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Events$onInput(_user$project$App$Change),
+								_0: A2(
+									_elm_lang$html$Html$button,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player1Loss),
+										_1: {
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$classList(
+												{
+													ctor: '::',
+													_0: {ctor: '_Tuple2', _0: 'playerbutton', _1: true},
+													_1: {
+														ctor: '::',
+														_0: {ctor: '_Tuple2', _0: 'player1button', _1: true},
+														_1: {ctor: '[]'}
+													}
+												}),
+											_1: {ctor: '[]'}
+										}
+									},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text(model.player1),
+										_1: {ctor: '[]'}
+									}),
 								_1: {
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$value(model.name),
+									_0: A2(
+										_elm_lang$html$Html$button,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player2Loss),
+											_1: {
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$classList(
+													{
+														ctor: '::',
+														_0: {ctor: '_Tuple2', _0: 'playerbutton', _1: true},
+														_1: {
+															ctor: '::',
+															_0: {ctor: '_Tuple2', _0: 'player2button', _1: true},
+															_1: {ctor: '[]'}
+														}
+													}),
+												_1: {ctor: '[]'}
+											}
+										},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text(model.player2),
+											_1: {ctor: '[]'}
+										}),
 									_1: {ctor: '[]'}
 								}
-							},
-							{ctor: '[]'}),
+							}),
 						_1: {
 							ctor: '::',
 							_0: A2(
@@ -8523,96 +8604,15 @@ var _user$project$App$view = function (model) {
 								{ctor: '[]'},
 								{
 									ctor: '::',
-									_0: A2(
-										_elm_lang$html$Html$button,
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Add),
-											_1: {
-												ctor: '::',
-												_0: _elm_lang$html$Html_Attributes$class('addbutton'),
-												_1: {ctor: '[]'}
-											}
-										},
-										{
-											ctor: '::',
-											_0: _elm_lang$html$Html$text('Add Player'),
-											_1: {ctor: '[]'}
-										}),
+									_0: _user$project$App$renderList(model.queue),
 									_1: {ctor: '[]'}
 								}),
 							_1: {
 								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$div,
-									{ctor: '[]'},
-									{
-										ctor: '::',
-										_0: A2(
-											_elm_lang$html$Html$button,
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player1Loss),
-												_1: {
-													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$classList(
-														{
-															ctor: '::',
-															_0: {ctor: '_Tuple2', _0: 'playerbutton', _1: true},
-															_1: {
-																ctor: '::',
-																_0: {ctor: '_Tuple2', _0: 'player1button', _1: true},
-																_1: {ctor: '[]'}
-															}
-														}),
-													_1: {ctor: '[]'}
-												}
-											},
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html$text(model.player1),
-												_1: {ctor: '[]'}
-											}),
-										_1: {
-											ctor: '::',
-											_0: A2(
-												_elm_lang$html$Html$button,
-												{
-													ctor: '::',
-													_0: _elm_lang$html$Html_Events$onClick(_user$project$App$Player2Loss),
-													_1: {
-														ctor: '::',
-														_0: _elm_lang$html$Html_Attributes$classList(
-															{
-																ctor: '::',
-																_0: {ctor: '_Tuple2', _0: 'playerbutton', _1: true},
-																_1: {
-																	ctor: '::',
-																	_0: {ctor: '_Tuple2', _0: 'player2button', _1: true},
-																	_1: {ctor: '[]'}
-																}
-															}),
-														_1: {ctor: '[]'}
-													}
-												},
-												{
-													ctor: '::',
-													_0: _elm_lang$html$Html$text(model.player2),
-													_1: {ctor: '[]'}
-												}),
-											_1: {ctor: '[]'}
-										}
-									}),
+								_0: _user$project$App$aboutString,
 								_1: {
 									ctor: '::',
-									_0: A2(
-										_elm_lang$html$Html$div,
-										{ctor: '[]'},
-										{
-											ctor: '::',
-											_0: _user$project$App$renderList(model.queue),
-											_1: {ctor: '[]'}
-										}),
+									_0: _user$project$App$usageString,
 									_1: {ctor: '[]'}
 								}
 							}
