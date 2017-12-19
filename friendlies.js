@@ -8392,20 +8392,19 @@ var _user$project$App$update = F2(
 					if (_p2.ctor === 'Nothing') {
 						return {ctor: '_Tuple2', _0: model, _1: _elm_lang$core$Platform_Cmd$none};
 					} else {
-						var _p3 = _p2._0;
 						return {
 							ctor: '_Tuple2',
 							_0: A4(
 								_user$project$App$Model,
 								model.name,
 								model.player1,
-								_p3,
+								_p2._0,
 								A2(
 									_elm_lang$core$List$append,
 									A2(_elm_lang$core$List$drop, 1, model.queue),
 									{
 										ctor: '::',
-										_0: _p3,
+										_0: model.player2,
 										_1: {ctor: '[]'}
 									})),
 							_1: _elm_lang$core$Platform_Cmd$none
@@ -8413,7 +8412,7 @@ var _user$project$App$update = F2(
 					}
 				}
 			default:
-				var _p4 = _p0._0;
+				var _p3 = _p0._0;
 				return {
 					ctor: '_Tuple2',
 					_0: A4(
@@ -8423,8 +8422,8 @@ var _user$project$App$update = F2(
 						model.player2,
 						A2(
 							_elm_lang$core$List$append,
-							A2(_elm_lang$core$List$take, _p4, model.queue),
-							A2(_elm_lang$core$List$drop, _p4 + 1, model.queue))),
+							A2(_elm_lang$core$List$take, _p3, model.queue),
+							A2(_elm_lang$core$List$drop, _p3 + 1, model.queue))),
 					_1: _elm_lang$core$Platform_Cmd$none
 				};
 		}
